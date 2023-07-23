@@ -1,0 +1,7 @@
+<h1>index</h1>
+<!-- 로그인 정보는 context로 넘기지 않아도 된다. -->
+{% if user.is_authenticated %}
+    <p>{{ user }}</p>
+{% else %}
+    <p>로그인하세요</p>
+{% endif %}
